@@ -1,0 +1,29 @@
+program is an on-chain smart contract, no global variables
+
+it is completely stateless
+
+every program has an ID called as the pub key of an address where program is getting stored.
+
+
+every program is executable.
+
+executables are then converted into shared objects of bpf.
+
+bpf is like bytecode. this bytecode / bpf gets executed at run time.
+
+
+bpf is the VM here. whereas ETH has EVM.
+
+Data of the programs are stored in accounts
+
+everything is account here. accounts actually works like a buffer.
+
+these accounts are getting stored in Validator memory. In ETH data are getting stored in contracts where state is getting maintained. but in Solana programs are stateless. hence the states are getting stored in accounts and these accounts are getting stored in Validator memory.
+
+we need to pay RENT for that to get maintained.
+
+ERC20 example in solana -----> we have a token program which is a smart contract program for ERC20 which also has functions like send/receive token. and then we have multiple user /multiple  accounts that held thos tokens.
+
+refer this SDK - https://docs.rs/solana-program/1.5.3/solana_program/account_info/struct.AccountInfo.html
+
+  
