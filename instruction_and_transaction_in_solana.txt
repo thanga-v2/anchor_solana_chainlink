@@ -1,0 +1,20 @@
+Instruc is a basic operational unit in solana.
+
+Instruction is split into 
+1.program ID
+2.Accounts
+3.Instruction Data
+
+every instruction has these tree types
+
+we can call these set of instructions as a transaction.
+
+we pass the instruction viam JSON RPC API
+
+Solana programs are on-chain code with no logical state. build the instructions off-line and line up to send the instruction Online. 
+
+Instruction data is always be byte array. 
+
+when we pass byte array, we need to pass accounts as well. 
+
+
